@@ -32,3 +32,5 @@ Polynomial features to a degree of 2 were added to the data set. After adding th
 In order to make sure that the model was not over fitting, cross validation with 5 folds was performed and the outputs provided evidence to confirm that the models were not overfitting.
 
 ## Final Model
+
+Ridge Regression was finalized upon as the final model with an Mean Squared Error of 367.
