@@ -12,25 +12,24 @@ Machine learning models were trained to predict the salary of an individual usin
 Miles from metropolis was found to be negatively correlated with salary and years of experience was found to be positively correlated with salary.
 
 Linear Regression model was considered the base line model and training the model with the data provided a Mean Squared Error of 387.
+
+## Baseline Model used
+
+* Linear Regression
+
 ## Models Considered
 
 Model that were considered in this project were
 
-* Decision Tree Regressor
-* Ridge Regression
-* Lasso Regression
-* Stochastic Gradient Descent Regressor
+* Gradient Boosting Regressor
+* Random Forest Regressor
 
-Initially they all seemed to provide the same Mean Squared Error as the Linear Regression. Hence Feature engineering was performed.
+## Cross Validation
 
-## Feature Engineering
-
-Polynomial features to a degree of 2 were added to the data set. After adding these polynomial features, the Mean Squared Error of these models was found to decrease by about 20 units to 366.
-
-## Validation
-
-In order to make sure that the model was not over fitting, cross validation with 5 folds was performed and the outputs provided evidence to confirm that the models were not overfitting.
+In order to make sure that the model was not over fitting, cross validation with 5 folds was performed. The results were
+* The Gradient Boosting Regressor was found to have a mean MSE 356
+* Random Forest Regressor was found to have a mean MSE of 366.
 
 ## Final Model
 
-Ridge Regression was finalized upon as the final model with an Mean Squared Error of 367.
+Gradient Boosting Regressor was the final model with a Mean Squared Error of 356.
